@@ -117,6 +117,15 @@ using System.Runtime.CompilerServices;
 // 2017-02-06 - 2017.0.0.14 - merged pull request #22 from awmcc90 drastic changes implementing object inspection via reflection and cross-version compatibility
 // 2017-02-06 - 2017.0.0.15 - merged pull request #23 from awmcc90 to catch specific reflection invocation exceptions, not all
 // 2017-02-17 - 2017.0.0.16 - merged pull request #25 from chekalin-v: fix old bugs, significant improvements to the new reflection approach
+// 2017-02-21 - 2017.0.0.17 - merged pull request #26 from Alexander Ignatovich to restore ability to see extensible storage content
+// 2017-03-02 - 2017.0.0.18 - merged pull request #27 from @CADBIMDeveloper to display category BuiltInCategory, nullable double properties and empty lists
+// 2017-03-15 - 2017.0.0.19 - merged pull request #29 from @CADBIMDeveloper fixing bugs initialising type and opening background documents
+// 2017-03-16 - 2017.0.0.20 - merged pull request #30 from @eirannejad adding icon and exception handling
+// 2017-03-17 - 2017.0.0.21 - merged pull request #31 from @CADBIMDeveloper removing try-catch handler
+// 2017-03-17 - 2017.0.0.22 - added 'new' keyword to avoid warning and override inherited methods
+// 2017-03-27 - 2017.0.0.23 - dummy modification to trigger build for https://lookupbuilds.com cf. https://forums.autodesk.com/t5/revit-api-forum/ci-for-revit-lookup/m-p/6947111
+// 2017-04-07 - 2017.0.0.24 - merged pull request #33 by @peterhirn added build status badge
+// 2017-04-21 - 2018.0.0.0 - flat migration to Revit 2018
 //
-[assembly: AssemblyVersion( "2017.0.0.16" )]
-[assembly: AssemblyFileVersion( "2017.0.0.16" )]
+[assembly: AssemblyVersion( "2018.0.0.0" )]
+[assembly: AssemblyFileVersion( "2018.0.0.0" )]
