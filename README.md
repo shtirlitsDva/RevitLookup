@@ -1,5 +1,9 @@
 # RevitLookup
 
+![Revit API](https://img.shields.io/badge/Revit%20API-2018-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
+![.NET](https://img.shields.io/badge/.NET-4.5.2-blue.svg)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 [![Build Status](https://s3-eu-west-1.amazonaws.com/lookup-builds/extra/build_status.svg)](https://lookupbuilds.com)
 
 Interactive Revit BIM database exploration tool to view and navigate element properties and relationships.
@@ -9,10 +13,11 @@ Please refer to [The Building Coder](http://thebuildingcoder.typepad.com) for mo
 
 ## Versions
 
-The most up-to-date version provided here is for Revit 2017.
+The most up-to-date version provided here is for Revit 2018.
 
 If you are interested in an earlier release of Revit, please grab the latest appropriate one from the
 [release list](https://github.com/jeremytammik/RevitLookup/releases), e.g.,
+[2017.0.0.24](https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.24) for Revit 2017,
 [2016.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.13) for Revit 2016,
 [2015.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2015.0.0.8) for Revit 2015, etc.
 
@@ -43,6 +48,23 @@ If you specify the full DLL pathname in the add-in manifest, it can also be loca
 
 For more information on installing Revit add-ins in general, please refer to
 the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+
+
+<a name="caveat"></a>
+## Caveat &ndash; RevitLookup Cannot Snoop Everything
+
+This clarification was prompted by 
+the [issue #35 &ndash; RevitLookup doesn't snoop all members](https://github.com/jeremytammik/RevitLookup/issues/35):
+
+**Question:** I tried snooping a selected Structual Rebar element in the active view and found not all of the Rebar class members showed up in the Snoop Objects window. One of many members that weren't there: `Rebar.GetFullGeometryForView` method.
+
+Is this the expected behaviour? I was thinking I could get all object members just with  RevitLookup and without the Revit API help file `RevitAPI.chm`.
+
+**Answer:** RevitLookup cannot report **all** properties and methods on **all** elements.
+
+For instance, in the case of GetFullGeometryForView, a view input argument is required. How is RevitLookup supposed to be able to guess what view you are interested in?
+
+For methods requiring dynamic input that cannot be automatically determined, you will have to [make use of more intimate interactive database exploration tools, e.g. RevitPythonShell](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html).
 
 
 ## Author
