@@ -1,8 +1,8 @@
 # RevitLookup
 
-![Revit API](https://img.shields.io/badge/Revit%20API-2018-blue.svg)
+![Revit API](https://img.shields.io/badge/Revit%20API-2019-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
-![.NET](https://img.shields.io/badge/.NET-4.5.2-blue.svg)
+![.NET](https://img.shields.io/badge/.NET-4.7-blue.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 [![Build Status](https://s3-eu-west-1.amazonaws.com/lookup-builds/extra/build_status.svg)](https://lookupbuilds.com)
 
@@ -17,6 +17,7 @@ The most up-to-date version provided here is for Revit 2018.
 
 If you are interested in an earlier release of Revit, please grab the latest appropriate one from the
 [release list](https://github.com/jeremytammik/RevitLookup/releases), e.g.,
+[2018.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2018.0.0.8) for Revit 2018,
 [2017.0.0.24](https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.24) for Revit 2017,
 [2016.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.13) for Revit 2016,
 [2015.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2015.0.0.8) for Revit 2015, etc.
@@ -49,6 +50,12 @@ If you specify the full DLL pathname in the add-in manifest, it can also be loca
 For more information on installing Revit add-ins in general, please refer to
 the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
 
+Harry Mattison of [Boost your BIM](https://boostyourbim.wordpress.com) very kindly provides
+a ready-built [RevitLookup 2018 installer](https://boostyourbim.wordpress.com/2017/04/28/revit-lookup-2018-install):
+
+> If you don’t want to deal with source code and just want to use the tool, here
+is [Revit Lookup 2018.msi](https://drive.google.com/open?id=182W00Mk5Hj1FMHAo-xVnoFYlJ_s2Swrw),
+an installer for the compiled and signed DLL ready, courtesy of Boost Your BIM.
 
 <a name="caveat"></a>
 ## Caveat &ndash; RevitLookup Cannot Snoop Everything

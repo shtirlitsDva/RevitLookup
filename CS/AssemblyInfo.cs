@@ -1,6 +1,6 @@
 #region Header
 //
-// Copyright 2003-2017 by Autodesk, Inc. 
+// Copyright 2003-2018 by Autodesk, Inc. 
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -33,7 +33,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "Autodesk Inc." )]
 [assembly: AssemblyProduct( "RevitLookup" )]
-[assembly: AssemblyCopyright( "Copyright 2003-2017 (C) Autodesk Inc." )]
+[assembly: AssemblyCopyright( "Copyright 2003-2018 (C) Autodesk Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -100,7 +100,7 @@ using System.Runtime.CompilerServices;
 // 2015-09-15 - 2016.0.0.11 - implemented support for Element bounding box
 // 2015-10-22 - 2016.0.0.12 - readme cleanup
 // 2016-04-04 - 2016.0.0.13 - incremented copyright year from 2015 to 2016
-// 2016-04-15 - 2017.0.0.0 - migration to Revit 2017 by manuel of sofistik
+// 2016-04-15 - 2017.0.0.0 - migration to Revit 2017 Manuel of Sofistik
 // 2016-04-15 - 2017.0.0.1 - microscopic cleanup
 // 2016-04-19 - 2017.0.0.2 - ready for publication
 // 2016-06-04 - 2017.0.0.3 - before merging pull request #13 by awmcc90 to skip mepSys.Elements
@@ -128,6 +128,11 @@ using System.Runtime.CompilerServices;
 // 2017-04-21 - 2018.0.0.0 - flat migration to Revit 2018
 // 2017-06-05 - 2018.0.0.1 - merged pull request #34 from @CADBIMDeveloper: annotative family instance geometry, element enumerations instead of ids, parameter names and byte property values
 // 2017-08-28 - 2018.0.0.3 - merged pull request #36 from @Andrey-Bushman: switch target platform to.Net 4.6 and replace Revit 2017 NuGet package by Revit 2018.1 Nuget package
+// 2018-01-05 - 2018.0.0.5 - readme enhancements: badges, installer and updated link to MSI installer
+// 2018-01-05 - 2018.0.0.6 - incremented copyright year to 2018
+// 2018-03-02 - 2018.0.0.7 - merged pull request #41 from @Modis Pekshev: Add ConvertToStableRepresentation method for References
+// 2018-03-12 - 2018.0.0.8 - merged pull request #42 from @Modis Pekshev: Add "Search by and snoop" command
+// 2018-04-15 - 2019.0.0.0 - flat migration to Revit 2019
 //
-[assembly: AssemblyVersion( "2018.0.0.3" )]
-[assembly: AssemblyFileVersion( "2018.0.0.3" )]
+[assembly: AssemblyVersion( "2019.0.0.0" )]
+[assembly: AssemblyFileVersion( "2019.0.0.0" )]
