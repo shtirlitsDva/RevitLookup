@@ -1,6 +1,6 @@
 #region Header
 //
-// Copyright 2003-2018 by Autodesk, Inc. 
+// Copyright 2003-2019 by Autodesk, Inc. 
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted, 
@@ -126,20 +126,21 @@ namespace RevitLookup.Snoop.Forms
 
     new private void InitializeComponent()
     {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( Geometry ) );
-      this.SuspendLayout();
-      // 
-      // m_tvObjs
-      // 
-      this.m_tvObjs.LineColor = System.Drawing.Color.Black;
-      // 
-      // Geometry
-      // 
-      this.ClientSize = new System.Drawing.Size( 800, 478 );
-      this.Icon = ( (System.Drawing.Icon) ( resources.GetObject( "$this.Icon" ) ) );
-      this.Name = "Geometry";
-      this.ResumeLayout( false );
-      this.PerformLayout();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Geometry));
+			this.SuspendLayout();
+			// 
+			// m_tvObjs
+			// 
+			this.m_tvObjs.LineColor = System.Drawing.Color.Black;
+			// 
+			// Geometry
+			// 
+			this.ClientSize = new System.Drawing.Size(800, 478);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Name = "Geometry";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
     }
   }

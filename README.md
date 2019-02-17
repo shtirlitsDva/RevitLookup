@@ -16,11 +16,12 @@ Please refer to [The Building Coder](http://thebuildingcoder.typepad.com) for mo
 The most up-to-date version provided here is for Revit 2018.
 
 If you are interested in an earlier release of Revit, please grab the latest appropriate one from the
-[release list](https://github.com/jeremytammik/RevitLookup/releases), e.g.,
-[2018.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2018.0.0.8) for Revit 2018,
-[2017.0.0.24](https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.24) for Revit 2017,
-[2016.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.13) for Revit 2016,
-[2015.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2015.0.0.8) for Revit 2015, etc.
+[release list](https://github.com/jeremytammik/RevitLookup/releases), e.g.:
+
+- [2018.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2018.0.0.8) for Revit 2018
+- [2017.0.0.24](https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.24) for Revit 2017
+- [2016.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.13) for Revit 2016
+- [2015.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2015.0.0.8) for Revit 2015
 
 
 ## Builds
@@ -43,7 +44,12 @@ Thank you very much, Peter!
 ## Installation
 
 You install RevitLookup just like any other Revit add-in,
+by [copying the add-in manifest and the assembly DLL to the Revit Add-Ins folder](http://help.autodesk.com/view/RVT/2019/ENU/?guid=Revit_API_Revit_API_Developers_Guide_Introduction_Add_In_Integration_Add_in_Registration_html).
+
+<!----
 by [copying the add-in manifest and the assembly DLL to the Revit Add-Ins folder](http://help.autodesk.com/view/RVT/2018/ENU/?guid=GUID-4FFDB03E-6936-417C-9772-8FC258A261F7).
+---->
+
 
 If you specify the full DLL pathname in the add-in manifest, it can also be located elsewhere.
 
