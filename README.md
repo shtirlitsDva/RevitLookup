@@ -1,6 +1,6 @@
 # RevitLookup
 
-![Revit API](https://img.shields.io/badge/Revit%20API-2019-blue.svg)
+![Revit API](https://img.shields.io/badge/Revit%20API-2020-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
 ![.NET](https://img.shields.io/badge/.NET-4.7-blue.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
@@ -11,20 +11,21 @@ Interactive Revit BIM database exploration tool to view and navigate element pro
 Please refer to [The Building Coder](http://thebuildingcoder.typepad.com) for more information.
 
 
-## Versions
+## <a name="versions"></a> Versions
 
-The most up-to-date version provided here is for Revit 2018.
+The most up-to-date version provided here is for Revit 2020.
 
 If you are interested in an earlier release of Revit, please grab the latest appropriate one from the
 [release list](https://github.com/jeremytammik/RevitLookup/releases), e.g.:
 
+- [2019.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2019.0.0.13) for Revit 2019
 - [2018.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2018.0.0.8) for Revit 2018
 - [2017.0.0.24](https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.24) for Revit 2017
 - [2016.0.0.13](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.13) for Revit 2016
 - [2015.0.0.8](https://github.com/jeremytammik/RevitLookup/releases/tag/2015.0.0.8) for Revit 2015
 
 
-## Builds
+## <a name="builds"></a> Builds
 
 Peter Hirn of [Build Informed GmbH](https://www.buildinformed.com) very kindly set up a
 public [CI](https://en.wikipedia.org/wiki/Continuous_integration) for RevitLookup
@@ -62,6 +63,22 @@ a ready-built [RevitLookup 2018 installer](https://boostyourbim.wordpress.com/20
 > If you don’t want to deal with source code and just want to use the tool, here
 is [Revit Lookup 2018.msi](https://drive.google.com/open?id=182W00Mk5Hj1FMHAo-xVnoFYlJ_s2Swrw),
 an installer for the compiled and signed DLL ready, courtesy of Boost Your BIM.
+
+Harry's installer was cleaned up
+by [@VBScab](https://github.com/VBScab) and submitted to this repository
+in [issue #51 &ndash; the MSI in the project is flawed](https://github.com/jeremytammik/RevitLookup/issues/51).
+Here is the [cleaned-up RevitLookup 2018.0.0.0 installer](installer/revit_lookup_2018.0.0.0.msi).
+However, please note that other, more recent builds exist for Revit 2018.
+As explained above, they can be downloaded sans installer
+from [lookupbuilds.com](https://lookupbuilds.com).
+
+Harry shared a new installer in his post
+on [RevitLookup for Revit 2020](https://boostyourbim.wordpress.com/2019/04/16/revit-lookup-for-revit-2020),
+which I also added to the [installer folder](installer)
+in  [RevitLookup2017-2020.msi](installer/RevitLookup2017-2020.msi).
+Says he:
+
+> I’ve added some conditional compilation and multiple configurations so that the single solution can be used to build against any version of Revit 2017-2020.
 
 <a name="caveat"></a>
 ## Caveat &ndash; RevitLookup Cannot Snoop Everything

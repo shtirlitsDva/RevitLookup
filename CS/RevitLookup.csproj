@@ -118,29 +118,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\..\Revit2020 SDK\AdWindows.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\AdWindows.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="RevitAPI">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIIFC">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIIFC.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIIFC.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIMacros">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIMacros.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIMacros.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUIMacros">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIUIMacros.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Autodesk\Revit 2020\RevitAPIUIMacros.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">
@@ -182,15 +183,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Snoop\CollectorExts\DataFactory.cs" />
     <Compile Include="Snoop\CollectorExts\DataTypeInfoHelper.cs" />
     <Compile Include="Snoop\CollectorExts\ElementMethodsStream.cs" />
     <Compile Include="Snoop\CollectorExts\ElementPropertiesStream.cs" />
     <Compile Include="Snoop\CollectorExts\ExtensibleStorageEntityContentStream.cs" />
+    <Compile Include="Snoop\CollectorExts\FamilyTypeParameterValuesStream.cs" />
     <Compile Include="Snoop\CollectorExts\IElementStream.cs" />
     <Compile Include="Snoop\CollectorExts\SpatialElementStream.cs" />
+    <Compile Include="Snoop\Data\AssetProperty.cs" />
+    <Compile Include="Snoop\Data\Color.cs" />
+    <Compile Include="Snoop\Data\DoubleArray.cs" />
     <Compile Include="Snoop\Data\EmptyValue.cs" />
+    <Compile Include="Snoop\Data\EnumerableAsString.cs" />
     <Compile Include="Snoop\Data\ExtensibleStorageSeparator.cs" />
     <Compile Include="Snoop\Data\MemberSeparator.cs" />
+    <Compile Include="Snoop\Data\ElementPhaseStatuses.cs" />
+    <Compile Include="Snoop\Data\SnoopableObjectWrapper.cs" />
+    <Compile Include="Snoop\Data\ViewFiltersOverrideGraphicSettings.cs" />
+    <Compile Include="Snoop\Data\ViewFiltersVisibilitySettings.cs" />
     <Compile Include="Snoop\Forms\ParamEnum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,8 +439,9 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>copy "$(ProjectDir)RevitLookup.addin" "$(AppData)\Autodesk\REVIT\Addins\2019"
-copy "$(ProjectDir)bin\Debug\RevitLookup.dll" "$(AppData)\Autodesk\REVIT\Addins\2019"
+    <PostBuildEvent>copy "$(ProjectDir)RevitLookup.addin" "$(AppData)\Autodesk\REVIT\Addins\2020"
+
+copy "$(ProjectDir)bin\Debug\RevitLookup.dll" "$(AppData)\Autodesk\REVIT\Addins\2020"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>

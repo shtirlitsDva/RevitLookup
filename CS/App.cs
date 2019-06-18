@@ -27,7 +27,6 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Media.Imaging;
 using Autodesk.Revit.ApplicationServices;
-using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 
@@ -81,6 +80,7 @@ namespace RevitLookup
       optionsBtn.AddPushButton( new PushButtonData( "Snoop Pick Face...", "Snoop Pick Face...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScopePickSurface" ) );
       optionsBtn.AddPushButton( new PushButtonData( "Snoop Pick Edge...", "Snoop Pick Edge...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScopePickEdge" ) );
       optionsBtn.AddPushButton( new PushButtonData( "Snoop Pick Linked Element...", "Snoop Linked Element...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScopeLinkedElement" ) );
+      optionsBtn.AddPushButton( new PushButtonData( "Snoop Dependent Elements...", "Snoop Dependent Elements...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopModScopeDependents" ) );
       optionsBtn.AddPushButton( new PushButtonData( "Snoop Active View...", "Snoop Active View...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopActiveView" ) );
       optionsBtn.AddPushButton( new PushButtonData( "Snoop Application...", "Snoop Application...", ExecutingAssemblyPath, "RevitLookup.CmdSnoopApp" ) );
       optionsBtn.AddPushButton( new PushButtonData( "Search and Snoop...", "Search and Snoop...", ExecutingAssemblyPath, "RevitLookup.CmdSearchBy" ) );
