@@ -32,7 +32,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -118,30 +118,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AdWindows">
-      <HintPath>..\..\..\..\Revit2020 SDK\AdWindows.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\AdWindows.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="RevitAPI">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIIFC">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIIFC.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\RevitAPIIFC.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIMacros">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIMacros.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\RevitAPIMacros.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUIMacros">
-      <HintPath>..\..\..\..\Revit2020 SDK\RevitAPIUIMacros.dll</HintPath>
+      <HintPath>..\..\..\..\Revit SDK\2021\RevitAPIUIMacros.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">
